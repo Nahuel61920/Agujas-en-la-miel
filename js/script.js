@@ -39,7 +39,8 @@ var swiper = new Swiper(".pc-swiper", {
 
 
   var swiper = new Swiper(".mobil-swiper", {
-    loop:true,
+    spaceBetween: 30,
+    centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
