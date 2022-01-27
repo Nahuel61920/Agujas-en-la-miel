@@ -135,11 +135,6 @@ h2 {
     margin-top: -60px;
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-}
-
 .swiper-slide .contenedor {
     display: block;
     width: 100%;
@@ -180,9 +175,17 @@ footer {
 }
 
 @media (max-width: 550px) {
+    .portada{
+        width: 350px;
+    }
+    
     .paper{
         min-width: 350px;
         max-width: 350px;
+    }
+
+    .paper-blanco {
+        padding: 200px 175px;
     }
 
     #button-up{
@@ -201,6 +204,11 @@ footer {
     .paper p {
         font-size: 1.3rem;
     }
+
+    .swiper {
+        display: none;
+    }
+
 
     footer {
         font-size: 1.4rem;
