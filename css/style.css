@@ -286,11 +286,12 @@ footer {
     .mobil-swiper {
         min-width: 300px;
         max-width: 300px;;
-        height: 800px;
+        height: 820px;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 20px;
     }
 
     .mobil-swiper .swiper-slide .contenedor h2 {
@@ -301,6 +302,9 @@ footer {
         margin-top: 1rem;
     }
 
+    blockquote {
+        font-size: 1rem;
+    }
 
     footer {
         font-size: 1.3rem;
