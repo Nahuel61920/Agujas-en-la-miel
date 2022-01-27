@@ -25,7 +25,7 @@ window.onscroll = function(){
 
 }
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".pc-swiper", {
     effect: "cube",
     grabCursor: true,
     cubeEffect: {
@@ -35,4 +35,18 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
     },
+  });
+
+
+  var swiper = new Swiper(".mobil-swiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
   });
