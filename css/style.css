@@ -140,6 +140,9 @@ h2 {
     width: 100%;
 }
 
+.mobil-swiper {
+    display: none;
+}
 
 
 
@@ -222,7 +225,7 @@ footer {
         max-width: 350px;;
         height: 940px;
         margin-bottom: 2rem;
-        overflow: hidden;
+        overflow-y: hidden;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
