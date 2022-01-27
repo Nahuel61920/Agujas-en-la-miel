@@ -248,14 +248,19 @@ footer {
     }
 
     .mobil-swiper {
-        display: block;
-        width: 350px;
-        height: 820px;
+        display: flex;
+        min-width: 350px;
+        max-width: 350px;;
+        height: 840px;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
-        font-size: 1.3rem;
-      }
+        font-size: 1.2rem;
+    }
+
+    .mobil-swiper .swiper-slide .contenedor h2 {
+        font-size: 1.6rem;
+    }
 
 
     footer {
