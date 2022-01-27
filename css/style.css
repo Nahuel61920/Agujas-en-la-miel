@@ -239,7 +239,7 @@ footer {
         display: flex;
         min-width: 350px;
         max-width: 350px;;
-        height: 840px;
+        height: 950px;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
@@ -274,7 +274,7 @@ footer {
     .mobil-swiper {
         min-width: 300px;
         max-width: 300px;;
-        height: 850px;
+        height: 950px;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
