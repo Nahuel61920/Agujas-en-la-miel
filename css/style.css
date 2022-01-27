@@ -1,0 +1,160 @@
+:root {
+    --blue-dark: #19528b;
+    --blue: #46a2fd;
+    --white: whitesmoke;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: var(--blue);
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h1::first-letter{
+    text-transform: capitalize;
+}
+
+h2 {
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-image: url("https://img.freepik.com/foto-gratis/abierto-volando-libros-antiguos_1232-2096.jpg?size=626&ext=jpg&ga=GA1.2.1525432470.1642032000");
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.paper {
+    
+    padding: 35px;
+    min-width: 500px;
+    border-radius: 8px;
+    background: var(--white);
+    margin-bottom: 2rem;
+}
+
+.paper p {
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.paper p::first-letter {
+    text-transform: capitalize;
+}
+
+.paper ul li{
+    list-style: none;
+    padding: .5rem;
+}
+
+.paper .indice-titulo{
+    text-decoration: none;
+    color: var(--blue-dark);
+
+}
+
+.indice {
+    text-align: center;
+}
+
+
+
+#button-up{
+    width: 60px;
+    height: 60px;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all .3s ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+
+footer {
+    min-height: 60px;
+    font-size: 2.4rem;
+    font-family: 'Indie Flower', cursive;
+    line-height: 62px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 550px) {
+    .paper{
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    #button-up{
+        width: 40px;
+        height: 40px;
+        background: var(--blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+        border-radius: 50%;
+        font-size: 10px;
+        
+    }
+
+    .paper p {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 1.4rem;
+    }
+}
