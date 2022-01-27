@@ -248,7 +248,7 @@ footer {
     }
 
     .mobil-swiper {
-        display: flex;
+        display: block;
         min-width: 350px;
         max-width: 350px;;
         height: 840px;
