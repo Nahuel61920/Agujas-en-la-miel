@@ -47,6 +47,5 @@ var swiper = new Swiper(".pc-swiper", {
     pagination: {
       el: ".swiper-pagination",
     },
-    mousewheel: true,
     keyboard: true,
   });
