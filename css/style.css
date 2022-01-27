@@ -78,7 +78,7 @@ h2 {
 }
 
 .paper-blanco {
-    padding: 400px 250px;
+    padding: 300px 250px;
     margin-bottom: 2rem;
     background-color: var(--white);
     border-radius: 8px;
@@ -127,18 +127,56 @@ h2 {
     text-align: end;
 }
 
-.swiper {
+.pc-swiper {
     width: 500px;
     height: 650px;
     position: absolute;
     margin-left: -150px;
-    margin-top: -60px;
 }
 
-.swiper-slide .contenedor {
+.pc-swiper .swiper-slide .contenedor {
     display: block;
     width: 100%;
 }
+
+
+.mobil-swiper {
+    display: none;
+    width: 500px;
+    height: 650px;
+    margin-bottom: 2rem;
+}
+
+.mobil-swiper .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.mobil-swiper .swiper-slide .contenedor p {
+    font-size: 1.4rem;
+  }
+
+  .mobil-swiper .swiper-slide .contenedor blockquote{
+    font-size: 1.2rem;
+  }
+
+
+
+
 
 
 #button-up{
@@ -205,9 +243,19 @@ footer {
         font-size: 1.3rem;
     }
 
-    .swiper {
+    .pc-swiper {
         display: none;
     }
+
+    .mobil-swiper {
+        display: block;
+        width: 350px;
+        height: 820px;
+    }
+
+    .mobil-swiper .swiper-slide .contenedor p {
+        font-size: 1.3rem;
+      }
 
 
     footer {
