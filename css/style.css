@@ -11,6 +11,7 @@
     padding: 0;
 }
 
+
 html {
     font-size: 62.5%;
 }
@@ -62,13 +63,25 @@ h2 {
 
 }
 
+.portada{
+    width: 500px;
+    margin: 2rem;
+}
+
 .paper {
-    
+    max-width: 500px;
     padding: 35px;
     min-width: 500px;
     border-radius: 8px;
     background: var(--white);
     margin-bottom: 2rem;
+}
+
+.paper-blanco {
+    padding: 400px 250px;
+    margin-bottom: 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
 }
 
 .paper p {
@@ -92,10 +105,45 @@ h2 {
 
 }
 
+.paper blockquote .numero {
+    font-size: 1rem;
+}
+
 .indice {
     text-align: center;
 }
 
+.introduccion {
+    margin-top: 4rem;
+}
+
+.autor {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.autor p {
+    text-align: end;
+}
+
+.swiper {
+    width: 500px;
+    height: 650px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -60px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide .contenedor {
+    display: block;
+    width: 100%;
+}
 
 
 #button-up{
@@ -133,8 +181,8 @@ footer {
 
 @media (max-width: 550px) {
     .paper{
-        min-width: 300px;
-        max-width: 300px;
+        min-width: 350px;
+        max-width: 350px;
     }
 
     #button-up{
