@@ -39,7 +39,7 @@ var swiper = new Swiper(".pc-swiper", {
 
 
   var swiper = new Swiper(".mobil-swiper", {
-    cssMode: true,
+    loop:true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -47,4 +47,15 @@ var swiper = new Swiper(".pc-swiper", {
     pagination: {
       el: ".swiper-pagination",
     },
+    breakpoints: {
+      0: {
+      slidesPerView: 1,
+      },
+      768: {
+      slidesPerView: 2,
+      },
+      1024: {
+      slidesPerView: 3,
+      },
+  },
   });
