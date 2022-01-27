@@ -141,26 +141,7 @@ h2 {
 }
 
 
-.mobil-swiper {
-    display: none;
-    width: 500px;
-    height: 650px;
-    margin-bottom: 2rem;
-}
 
-.mobil-swiper .swiper-slide {
-    font-size: 18px;
-    background: var(--white);
-
-}
-
-.mobil-swiper .swiper-slide .contenedor p {
-    font-size: 1.4rem;
-}
-
-.mobil-swiper .swiper-slide .contenedor blockquote{
-    font-size: 1.2rem;
-}
 
 
 
@@ -239,7 +220,9 @@ footer {
         display: flex;
         min-width: 350px;
         max-width: 350px;;
-        height: 950px;
+        height: 940px;
+        margin-bottom: 2rem;
+        overflow: hidden;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
@@ -248,6 +231,16 @@ footer {
 
     .mobil-swiper .swiper-slide .contenedor h2 {
         font-size: 1.6rem;
+    }
+    
+    .mobil-swiper .swiper-slide {
+        font-size: 18px;
+        background: var(--white);
+    
+    }
+    
+    .mobil-swiper .swiper-slide .contenedor blockquote{
+        font-size: 1.1rem;
     }
 
 
@@ -273,7 +266,7 @@ footer {
 
     .mobil-swiper {
         min-width: 300px;
-        max-width: 300px;;
+        max-width: 300px;
         height: 950px;
     }
 
