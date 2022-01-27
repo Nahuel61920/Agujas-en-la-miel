@@ -132,6 +132,7 @@ h2 {
     height: 650px;
     position: absolute;
     margin-left: -150px;
+    margin-bottom: 2rem;
 }
 
 .pc-swiper .swiper-slide .contenedor {
@@ -151,19 +152,6 @@ h2 {
     font-size: 18px;
     background: var(--white);
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
 .mobil-swiper .swiper-slide .contenedor p {
@@ -248,10 +236,10 @@ footer {
     }
 
     .mobil-swiper {
-        display: block;
+        display: flex;
         min-width: 350px;
         max-width: 350px;;
-        height: 900px;
+        height: 840px;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
@@ -286,7 +274,7 @@ footer {
     .mobil-swiper {
         min-width: 300px;
         max-width: 300px;;
-        height: 900px;
+        height: 850px;
     }
 
     .mobil-swiper .swiper-slide .contenedor p {
