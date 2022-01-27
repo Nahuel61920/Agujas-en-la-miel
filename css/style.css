@@ -149,7 +149,7 @@ h2 {
 
 .mobil-swiper .swiper-slide {
     font-size: 18px;
-    background: #fff;
+    background: var(--white);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -164,15 +164,15 @@ h2 {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
 
 .mobil-swiper .swiper-slide .contenedor p {
     font-size: 1.4rem;
-  }
+}
 
-  .mobil-swiper .swiper-slide .contenedor blockquote{
+.mobil-swiper .swiper-slide .contenedor blockquote{
     font-size: 1.2rem;
-  }
+}
 
 
 
@@ -265,5 +265,44 @@ footer {
 
     footer {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .portada{
+        width: 300px;
+    }
+    
+    .paper{
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .paper-blanco {
+        padding: 200px 150px;
+    }
+
+
+    .mobil-swiper {
+        min-width: 300px;
+        max-width: 300px;;
+        height: 800px;
+    }
+
+    .mobil-swiper .swiper-slide .contenedor p {
+        font-size: 1rem;
+    }
+
+    .mobil-swiper .swiper-slide .contenedor h2 {
+        font-size: 1.5rem;
+    }
+
+    .mobil-swiper .swiper-slide .contenedor .introduccion {
+        margin-top: 1rem;
+    }
+
+
+    footer {
+        font-size: 1.3rem;
     }
 }
