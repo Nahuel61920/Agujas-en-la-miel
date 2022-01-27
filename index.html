@@ -1,308 +1,429 @@
-:root {
-    --blue-dark: #19528b;
-    --blue: #46a2fd;
-    --white: whitesmoke;
-    --black: #000;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <title>Agujas en la miel</title>
+</head>
+<body>
+    <header>
+        <h1>Agujas en la miel</h1>
+    </header>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <section class="table">
+        <h2>Esteban Carrasco</h2>
 
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.4rem;
-    background-color: var(--blue);
-}
-
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3.4rem;
-}
-
-h1::first-letter{
-    text-transform: capitalize;
-}
-
-h2 {
-    font-weight: 700;
-    padding: 2rem;
-}
-
-.table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 30px 0;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    background-image: url("https://img.freepik.com/foto-gratis/abierto-volando-libros-antiguos_1232-2096.jpg?size=626&ext=jpg&ga=GA1.2.1525432470.1642032000");
-    height: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.portada{
-    width: 500px;
-    margin: 2rem;
-}
-
-.paper {
-    max-width: 500px;
-    padding: 35px;
-    min-width: 500px;
-    border-radius: 8px;
-    background: var(--white);
-    margin-bottom: 2rem;
-}
-
-.paper-blanco {
-    padding: 300px 250px;
-    margin-bottom: 2rem;
-    background-color: var(--white);
-    border-radius: 8px;
-}
-
-.paper p {
-    line-height: 25px;
-    text-align: justify;
-    font-weight: 400;
-}
-
-.paper p::first-letter {
-    text-transform: capitalize;
-}
-
-.paper ul li{
-    list-style: none;
-    padding: .5rem;
-}
-
-.paper .indice-titulo{
-    text-decoration: none;
-    color: var(--blue-dark);
-
-}
-
-.paper blockquote .numero {
-    font-size: 1rem;
-}
-
-.indice {
-    text-align: center;
-}
-
-.introduccion {
-    margin-top: 4rem;
-}
-
-.autor {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.autor p {
-    text-align: end;
-}
-
-.pc-swiper {
-    width: 500px;
-    height: 650px;
-    position: absolute;
-    margin-left: -150px;
-}
-
-.pc-swiper .swiper-slide .contenedor {
-    display: block;
-    width: 100%;
-}
-
-
-.mobil-swiper {
-    display: none;
-    width: 500px;
-    height: 650px;
-    margin-bottom: 2rem;
-}
-
-.mobil-swiper .swiper-slide {
-    font-size: 18px;
-    background: var(--white);
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.mobil-swiper .swiper-slide .contenedor p {
-    font-size: 1.4rem;
-}
-
-.mobil-swiper .swiper-slide .contenedor blockquote{
-    font-size: 1.2rem;
-}
-
-
-
-
-
-
-#button-up{
-    width: 60px;
-    height: 60px;
-    background: var(--blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--black);
-    border-radius: 50%;
-    font-size: 20px;
-    position: fixed;
-    bottom: 70px;
-    right: 50px;
-    cursor: pointer;
-    border: 4px solid transparent;
-    transition: all .3s ease;
-    transform: scale(0);
-}
-
-#button-up:hover{
-    transform: scale(1.1);
-    border-color: rgba(0,0,0,0.1);
-}
-
-
-footer {
-    min-height: 60px;
-    font-size: 2.4rem;
-    font-family: 'Indie Flower', cursive;
-    line-height: 62px;
-    text-transform: capitalize;
-}
-
-@media (max-width: 550px) {
-    .portada{
-        width: 350px;
-    }
-    
-    .paper{
-        min-width: 350px;
-        max-width: 350px;
-    }
-
-    .paper-blanco {
-        padding: 200px 175px;
-    }
-
-    #button-up{
-        width: 40px;
-        height: 40px;
-        background: var(--blue);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--black);
-        border-radius: 50%;
-        font-size: 10px;
+        <img src="img/portada.png" alt="" class="portada">
         
-    }
+        <article class="paper-blanco"></article>
+        
+        <article class="paper">
+            <h2 class="indice">Índice</h2>
+            <ul>
+                <li>
+                    <a href="#noche-entintada" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Noche entintada</a>
+                </li>
+                <li>
+                    <a href="#perspectiva-empática" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Perspectiva empática</a>
+                </li>
+                <li>
+                    <a href="#brevedad" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Brevedad</a>
+                </li>
+                <li>
+                    <a href="#cualidades" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Cualidades</a>
+                </li>
+                <li>
+                    <a href="#cuerpo-papel" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Cuerpo, papel y alma</a>
+                </li>
+                <li>
+                    <a href="#seguro-de-vida" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Seguro de vida</a>
+                </li>
+                <li>
+                    <a href="#destiempo" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Destiempo</a>
+                </li>
+                <li>
+                    <a href="#donde" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Dóndes</a>
+                </li>
+                <li>
+                    <a href="#soneto-otonio" class="indice-titulo"> <i class="fas fa-arrow-right"></i> Soneto a las flores en otoño</a>
+                </li>
+            </ul>
+        </article>
 
-    .paper p {
-        font-size: 1.3rem;
-    }
-
-    .pc-swiper {
-        display: none;
-    }
-
-    .mobil-swiper {
-        display: flex;
-        min-width: 350px;
-        max-width: 350px;;
-        height: 840px;
-    }
-
-    .mobil-swiper .swiper-slide .contenedor p {
-        font-size: 1.2rem;
-    }
-
-    .mobil-swiper .swiper-slide .contenedor h2 {
-        font-size: 1.6rem;
-    }
-
-
-    footer {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 370px) {
-    .portada{
-        width: 300px;
-    }
+        
     
-    .paper{
-        min-width: 300px;
-        max-width: 300px;
-    }
+        <div class="swiper mySwiper pc-swiper">
+            <div class="swiper-wrapper">
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <h2 class="introduccion">INTRODUCCIÓN</h2>
+                    <br>
+                    <br>
+                    <p>
+                        En la poesía habitan el titubeo, la contradicción, el contrasentido. En la palabra poética se tensa nuestra relación con el mundo y la duda se manifiesta en forma de paradoja. Cuando un poeta escribe: “Apenas soy un gesto que Vuelve / de tus manos”  condensa en esos simples versos las batallas internas del sujeto: un tironeo entre ser uno o ser del otro, ser uno o volver al otro como gesto, como sombra. El poema cuestiona, incomoda, moviliza lo fijo, lo establecido, se abre a la incertidumbre. Entonces, ¿por qué leer poesía? ¿Por qué insistir en una palabra indirecta, cuestionadora, si la demanda social es la del lenguaje transparente, objetivo, linealmente racional que ofrezca garantías y de seguridades? De repente, asoma como posible respuesta a estas preguntas una imagen conflictiva, una especie de nudo que diseña el tormento amoroso como un calvario extendido en el tiempo: agujas en la miel, entre lo dulce y lo punzante se debate el amor, el deseo. El poemario de 
+                    </p>
+                    <br>
+                    <blockquote><span class="numero">1</span>  Estos versos pertenecen al poema “Extraño” del tucumano Ángel Leiva. El poema completo forma parte del libro Del amor y la tierra publicado en 1967 y reeditado por el Ente de Cultura de Tucumán en 2017 como una Edición Homenaje por los 50 años de trayectoria poética del autor.  </blockquote>
+                
+                    </div>
+                </div>
+    
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            Esteban Carrasco instala el mundo de las paradojas en el centro de la escena amatoria. <br>    
+                            El joven poeta apuesta a la poesía amorosa con el riesgo que supone incursionar por uno de los tópicos más recurrentes de la literatura. Todos alguna vez hemos leído, escrito o escuchado un poema de amor enceguecidos por la pasión, impulsados por el deseo (Pablo Neruda, Rubén Darío, Alfonsina Storni, Gonzalo Rojas, Delmira Agustini, Inés Aráoz, Ariadna Chávez, Ángel Leiva y la lista puede seguir). Escribir el amor siempre es un riesgo porque en el imaginario social se han acumulado escenas, imágenes, frases, ritmos, melodías, sonoridades, muchas de ellas cristalizadas, universalizadas, a las que inclusive un publicista apela para captar clientes en el mercado. Los universales del amor copan el cine, la música, las revistas de chimentos, las publicidades, los memes, la literatura.  El poeta se ve en una encrucijada porque mover esas capas de discursos que sedimentó el tiempo con el brillo de una palabra fresca supone un gran esfuerzo. El poemario de Esteban sale victorioso en esa lucha. <br> 
+                            Los poemas que integran Agujas en la miel vuelven al viejo tópico del amor fatal, un amor que construye dependencia entre un yo y un vos, un amor que no puede soportar la pérdida del vos, un amor que ante esa pérdida sufre y piensa en la muerte. Amor y muerte se anudan como un pañuelo que atormenta a quien escribe. Parafraseando a Quevedo en el poema “Amor constante más allá de la muerte”, las cenizas del que ama serán cenizas, pero tendrán sentido luego de la muerte, “polvo serán, más polvo enamorado”. <br>  
+                            
+                        </p>
+                    </div>
+                </div>
 
-    .paper-blanco {
-        padding: 200px 150px;
-    }
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            En esa herida que abre el deseo y la pérdida, los poemas escriben la palabra amor con fragmentos de angustia, entrampados en la ausencia y el recuerdo. Efectivamente, no se escribe para sentir algo, sino para dejar de sentir. Así lo enuncia el sujeto amoroso construido por Esteban en su poemario, un yo asfixiado por la ausencia del vos. Esa asfixia se transmite al lector. Sentimos como lectores la llaga del corazón espinado. Ahí se quedan a vivir los textos, el poemario es un regodeo, un goce en el sufrimiento. ¿No es acaso el amor una forma trágica de enterarnos de que a quien amamos nunca lo podremos tener en su totalidad? En fuga constante, el otro se nos va de las manos porque es puro tiempo, cambia a medida que pasan los días. Por eso la tragedia en los poemas de Esteban: la adolescencia, el primer amor descubren este gran drama humano y resulta insoportable. <br>
+                            Entonces, como una forma de placebo ante lo insoportable, en las hojas del libro se amontonan las estrategias para que la ausencia no duela. Quienes se acerquen a Agujas en la miel encontrarán el cuerpo de los enamorados hecho papel, tinta, poema, manuscrito, copia, plagio. Toda una retórica del amor que se enuncia apelando a los materiales con los que se escribe. Con palabras, agujas, lápices sin punta, lapiceras descartables se esbozan poemas de amor a la amada y -al mismo tiempo- se punzan, hieren, rayan, tachan los derroteros de un dolor que no cicatriza. Dice el poema “Caminata de rayón”: “Mi lápiz va por donde va el dolor… / y yo voy / por donde va mi lápiz”. 
+                        </p>
+                    </div>
+                </div>
 
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            En esa trayectoria de suplicios que recorre el enamorado, el recuerdo se vuelve un enemigo, el poema un plagio del alma de quien no se puede tener, la escritura una cárcel, la tinta una lágrima negra y la poesía una forma de quitarse la vida. ¿Acaso no hay algo más angustiante que el recuerdo del recuerdo? <br> 
+                            En el poemario de Esteban, la escritura poética nace de la ausencia porque hay que soportar el fantasma del que no está.  El lenguaje poético es una forma de manipular el tiempo para retardar la muerte del otro, de quien amo y no me ama. La amada es una lengua arcaica que se tensiona entre el descubrimiento, el dolor de la pérdida y el sinsentido. Por eso, el poeta conjuga los verbos de esa lengua e intenta articular el mundo con ella. Lo que consigue es que la lengua se trabe con los verbos querer, soñar y esperar; la desilusión se hace más grande. La lengua, al igual que la amada, son un error de sistema, un código indescifrable, una comunicación imposible, un abecedario trunco, un trabalenguas doloroso. <br>
+                            Roland Barthes le dedica al ausente las siguientes líneas en Fragmentos de un discurso amoroso: “La ausencia del otro me mantiene la cabeza bajo el agua; poco a poco, me ahogo, mi aire se rarifica: en esta asfixia reconstruyo «mi verdad» y preparo lo Intratable del amor” . <br>
+                        </p>
+                        <br>
+                        <blockquote> <span class="numero">2</span> Barthes, Roland. (1982). Fragmentos de un discurso amoroso. <br>
+                            Buenos Aires: Siglo XXI, pág. 59.  
+                        </blockquote>
+                    </div>
+                </div>
 
-    .mobil-swiper {
-        min-width: 300px;
-        max-width: 300px;;
-        height: 800px;
-    }
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            Aproximarse a los poemas de Agujas en la miel tiene mucho de esa asfixia que propone Barthes, necesaria para reconstruirse después de un desamor y prepararse para volver a jugar el juego siempre peligroso del deseo. El libro se cierra ambiguo: pareciera que se rompe la dependencia con ese “vos”, pero el último poema del libro (“Impune”) vuelve a armar la celada y el enredo amoroso se hace interminable: “No te detengo, / ni te contesto, / pero dime…/ ¿te vas para que te extrañe / o para que te olvide?” El sujeto amoroso sigue atrapado en las tretas del amor. Pareciera que lo necesita para hacer de la vida un vértigo, de lo real algo amorfo, cambiante. Se apuesta al amor porque si no la vida no cambia y ese es el problema, dice el poeta en “Abandono”. <br>
+                            Recupero la pregunta inicial: ¿por qué leer poesía? En el reverso de los poemas de Esteban, en sus bordes, late una posible respuesta: hay que leer y escribir poesía para darle a la vida la complejidad que se merece, devolverle su densidad y sus múltiples relieves. Celebro la magia de la literatura y celebro que nuevos lectores se encuentren con los textos de este joven poeta.  Incompletos, abiertos, los poemas de Agujas en la miel exigen lectores que abran, cierren y vuelvan a abrir el círculo del amor, la muerte, el tiempo, la ausencia. Solo me queda invitarlos a encontrarse o desencontrarse: apropiarse de sus páginas.   
+                        </p>
+                        <br>
+                        <div class="autor">
+                            <p>Martín Aguierrez</p>
+                            <p>2018</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    >
+        <div class="swiper mySwiper mobil-swiper">
+            <div class="swiper-wrapper">
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <h2 class="introduccion">INTRODUCCIÓN</h2>
+                    <br>
+                    <br>
+                    <p>
+                        En la poesía habitan el titubeo, la contradicción, el contrasentido. En la palabra poética se tensa nuestra relación con el mundo y la duda se manifiesta en forma de paradoja. Cuando un poeta escribe: “Apenas soy un gesto que Vuelve / de tus manos”  condensa en esos simples versos las batallas internas del sujeto: un tironeo entre ser uno o ser del otro, ser uno o volver al otro como gesto, como sombra. El poema cuestiona, incomoda, moviliza lo fijo, lo establecido, se abre a la incertidumbre. Entonces, ¿por qué leer poesía? ¿Por qué insistir en una palabra indirecta, cuestionadora, si la demanda social es la del lenguaje transparente, objetivo, linealmente racional que ofrezca garantías y de seguridades? De repente, asoma como posible respuesta a estas preguntas una imagen conflictiva, una especie de nudo que diseña el tormento amoroso como un calvario extendido en el tiempo: agujas en la miel, entre lo dulce y lo punzante se debate el amor, el deseo. El poemario de Esteban Carrasco instala el mundo de las paradojas en el centro de la escena amatoria. <br>  
+                    </p>
+                    <br>
+                    <blockquote><span class="numero">1</span>  Estos versos pertenecen al poema “Extraño” del tucumano Ángel Leiva. El poema completo forma parte del libro Del amor y la tierra publicado en 1967 y reeditado por el Ente de Cultura de Tucumán en 2017 como una Edición Homenaje por los 50 años de trayectoria poética del autor.  </blockquote>
+                
+                    </div>
+                </div>
+    
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            El joven poeta apuesta a la poesía amorosa con el riesgo que supone incursionar por uno de los tópicos más recurrentes de la literatura. Todos alguna vez hemos leído, escrito o escuchado un poema de amor enceguecidos por la pasión, impulsados por el deseo (Pablo Neruda, Rubén Darío, Alfonsina Storni, Gonzalo Rojas, Delmira Agustini, Inés Aráoz, Ariadna Chávez, Ángel Leiva y la lista puede seguir). Escribir el amor siempre es un riesgo porque en el imaginario social se han acumulado escenas, imágenes, frases, ritmos, melodías, sonoridades, muchas de ellas cristalizadas, universalizadas, a las que inclusive un publicista apela para captar clientes en el mercado. Los universales del amor copan el cine, la música, las revistas de chimentos, las publicidades, los memes, la literatura.  El poeta se ve en una encrucijada porque mover esas capas de discursos que sedimentó el tiempo con el brillo de una palabra fresca supone un gran esfuerzo. El poemario de Esteban sale victorioso en esa lucha. <br> 
+                            Los poemas que integran Agujas en la miel vuelven al viejo tópico del amor fatal, un amor que construye dependencia entre un yo y un vos, un amor que no puede soportar la pérdida del vos, un amor que ante esa pérdida sufre y piensa en la muerte. Amor y muerte se anudan como un pañuelo que atormenta a quien escribe. Parafraseando a Quevedo en el poema “Amor constante más allá de la muerte”, las cenizas del que ama serán cenizas, pero tendrán sentido luego de la muerte, “polvo serán, más polvo enamorado”. <br>  
+                            
+                        </p>
+                    </div>
+                </div>
 
-    .mobil-swiper .swiper-slide .contenedor p {
-        font-size: 1rem;
-    }
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            En esa herida que abre el deseo y la pérdida, los poemas escriben la palabra amor con fragmentos de angustia, entrampados en la ausencia y el recuerdo. Efectivamente, no se escribe para sentir algo, sino para dejar de sentir. Así lo enuncia el sujeto amoroso construido por Esteban en su poemario, un yo asfixiado por la ausencia del vos. Esa asfixia se transmite al lector. Sentimos como lectores la llaga del corazón espinado. Ahí se quedan a vivir los textos, el poemario es un regodeo, un goce en el sufrimiento. ¿No es acaso el amor una forma trágica de enterarnos de que a quien amamos nunca lo podremos tener en su totalidad? En fuga constante, el otro se nos va de las manos porque es puro tiempo, cambia a medida que pasan los días. Por eso la tragedia en los poemas de Esteban: la adolescencia, el primer amor descubren este gran drama humano y resulta insoportable. <br>
+                            Entonces, como una forma de placebo ante lo insoportable, en las hojas del libro se amontonan las estrategias para que la ausencia no duela. Quienes se acerquen a Agujas en la miel encontrarán el cuerpo de los enamorados hecho papel, tinta, poema, manuscrito, copia, plagio. Toda una retórica del amor que se enuncia apelando a los materiales con los que se escribe. Con palabras, agujas, lápices sin punta, lapiceras descartables se esbozan poemas de amor a la amada y -al mismo tiempo- se punzan, hieren, rayan, tachan los derroteros de un dolor que no cicatriza. Dice el poema “Caminata de rayón”: “Mi lápiz va por donde va el dolor… / y yo voy / por donde va mi lápiz”. 
+                        </p>
+                    </div>
+                </div>
 
-    .mobil-swiper .swiper-slide .contenedor h2 {
-        font-size: 1.5rem;
-    }
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            En esa trayectoria de suplicios que recorre el enamorado, el recuerdo se vuelve un enemigo, el poema un plagio del alma de quien no se puede tener, la escritura una cárcel, la tinta una lágrima negra y la poesía una forma de quitarse la vida. ¿Acaso no hay algo más angustiante que el recuerdo del recuerdo? <br> 
+                            En el poemario de Esteban, la escritura poética nace de la ausencia porque hay que soportar el fantasma del que no está.  El lenguaje poético es una forma de manipular el tiempo para retardar la muerte del otro, de quien amo y no me ama. La amada es una lengua arcaica que se tensiona entre el descubrimiento, el dolor de la pérdida y el sinsentido. Por eso, el poeta conjuga los verbos de esa lengua e intenta articular el mundo con ella. Lo que consigue es que la lengua se trabe con los verbos querer, soñar y esperar; la desilusión se hace más grande. La lengua, al igual que la amada, son un error de sistema, un código indescifrable, una comunicación imposible, un abecedario trunco, un trabalenguas doloroso. <br>
+                            Roland Barthes le dedica al ausente las siguientes líneas en Fragmentos de un discurso amoroso: “La ausencia del otro me mantiene la cabeza bajo el agua; poco a poco, me ahogo, mi aire se rarifica: en esta asfixia reconstruyo «mi verdad» y preparo lo Intratable del amor” . <br>
+                        </p>
+                        <br>
+                        <blockquote> <span class="numero">2</span> Barthes, Roland. (1982). Fragmentos de un discurso amoroso. <br>
+                            Buenos Aires: Siglo XXI, pág. 59.  
+                        </blockquote>
+                    </div>
+                </div>
 
-    .mobil-swiper .swiper-slide .contenedor .introduccion {
-        margin-top: 1rem;
-    }
+                <div class="paper swiper-slide">
+                    <div class="contenedor">
+                        <p>
+                            Aproximarse a los poemas de Agujas en la miel tiene mucho de esa asfixia que propone Barthes, necesaria para reconstruirse después de un desamor y prepararse para volver a jugar el juego siempre peligroso del deseo. El libro se cierra ambiguo: pareciera que se rompe la dependencia con ese “vos”, pero el último poema del libro (“Impune”) vuelve a armar la celada y el enredo amoroso se hace interminable: “No te detengo, / ni te contesto, / pero dime…/ ¿te vas para que te extrañe / o para que te olvide?” El sujeto amoroso sigue atrapado en las tretas del amor. Pareciera que lo necesita para hacer de la vida un vértigo, de lo real algo amorfo, cambiante. Se apuesta al amor porque si no la vida no cambia y ese es el problema, dice el poeta en “Abandono”. <br>
+                            Recupero la pregunta inicial: ¿por qué leer poesía? En el reverso de los poemas de Esteban, en sus bordes, late una posible respuesta: hay que leer y escribir poesía para darle a la vida la complejidad que se merece, devolverle su densidad y sus múltiples relieves. Celebro la magia de la literatura y celebro que nuevos lectores se encuentren con los textos de este joven poeta.  Incompletos, abiertos, los poemas de Agujas en la miel exigen lectores que abran, cierren y vuelvan a abrir el círculo del amor, la muerte, el tiempo, la ausencia. Solo me queda invitarlos a encontrarse o desencontrarse: apropiarse de sus páginas.   
+                        </p>
+                        <br>
+                        <div class="autor">
+                            <p>Martín Aguierrez</p>
+                            <p>2018</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+        <article class="paper" id="noche-entintada">
+            <h2>Noche entintada</h2>
+            <p>La poesía leyó en tus ojos <br>
+                un sueño de pájaros cansados. <br>
+                Cristales de luna <br>
+                en trasnochado eclipse, <br> 
+                tus ojos de luna, cerrados. <br>
+            </p>
+            <br>
+            <p>
+                Dame una noche, <br>
+                mírame y dame una noche, <br> 
+                en la hoja blanca del cielo, <br>
+                donde solo quiero escribir <b></b>
+                tinta negra <br>
+                y hacer negro <br>
+                todo el cielo, lleno de tinta, <br>
+                con tal de verte <br>
+                noche mía, <br>
+                tinta negra sobre mi noche. 
+            </p>
+        </article>
 
+        <article class="paper" id="perspectiva-empática">
+            <h2>Perspectiva empática </h2>
+            <p>
+                A mis ojos <br>
+                el océano es un niño, <br>
+                mi lágrima lo abriga. <br>
+                El «Te quiero» es cariño <br>
+                y el placer es amarte.<br>
+            </p>
+            <br>
+            <p>
+                A tus ojos <br>
+                el océano es inmenso, <br>
+                mi lágrima insignificante. <br>
+                El «Te quiero» es un capricho <br>
+                y el placer solo un instante. <br>
+            </p>
+            <br>
+            <p>
+                «El amor es ciego» <br>
+                Pero ¡qué mentira! <br>
+                Los dos vemos bien, <br>
+                pero vemos distinto. 
+            </p>
+        </article>
 
-    footer {
-        font-size: 1.3rem;
-    }
-}
+        <article class="paper" id="brevedad">
+            <h2>Brevedad</h2>
+            <p>
+                En tus labios acuna el tiempo detenido, <br>
+                y beso apenas ese instante <br>
+                que se encierra entre cartones <br>
+                y pétalos mojados, <br>
+                atrapándome los labios: <br>
+                en una dulce casita de dolencias, <br>
+                en un beso acaramelado, <br>
+                como avioncitos de papel fatigados <br>
+                que desploman sobre el agua <br>
+                y no consiguen volver al vuelo. <br>
+                Un beso demuestra <br>
+                lo mortales que somos, <br>
+                creación del tiempo. 
+
+            </p>
+        </article>
+
+        <article class="paper" id="cualidades">
+            <h2>Cualidades</h2>
+            <p>
+                Encantadora noche, brillante y día, <br>
+                no dejes neblina, ni miga de pan, <br>
+                limpia el mantel de malos recuerdos, <br>
+                quítalos de tu mesa. <br>
+                Necesaria música, apasionado tango, <br>
+                sonrisa de lana, lena, lino, lona y luna, <br>
+                sonrisa de «la, la, la, no te escucho». <br>
+                Inteligente naturaleza, libres olas, <br>
+                quita el miedo de tu mesa. 
+            </p>
+            <br>
+            <p>
+                Eres encantadora, brillante, necesaria, apasionante, inteligente y libre: <br>
+                Sería un error no amarte.
+            </p>
+        </article>
+
+        <article class="paper" id="cuerpo-papel">
+            <h2>Cuerpo, papel y alma</h2>
+            <p>
+                Quiero besar tu cuerpo <br>
+                con las palabras de mi boca. <br>
+                Quiero tus: <br>
+                cabellos cuerdas de guitarra, <br>
+                frente álbum de nubes, <br>
+                cejas arcos de guerra, <br>
+                pestañas flechas de fuego, <br>
+                ojos gelatina de volcán, <br>
+                ojeras dormidas medias lunas, <br>
+                mejillas semillero de luciérnagas, <br>
+                nariz tienda de perfumes, <br>
+                respiración de perfumes, <br>
+                orejas caracolas sonidos de mar, <br> 
+                labios cráteres de marte, <br>
+                lengua mermelada de rubíes, <br>
+                voz libélulas de huerto, <br>
+                lenguaje de cristales, <br>
+                rostro nacimiento de sol, <br>
+                cuello tronco savia de transpiración, <br>
+                garganta nudos tallos de girasoles, <br>
+                hombros libros de filosofía con tapa dura, <br>
+                brazos bufanda de navidad, <br>
+                codos peces pintores de cristal, <br>
+                manos invernadero de caricias, <br>
+                dedos plantas trepadoras, <br>
+                columna cordillera vertebral, <br>
+                pechos colinas sin turismo, <br>
+                abdomen llanura de lienzo, <br>
+                ombligo abismo del lienzo, <br>
+                piernas paredes blancas mis rayones de crayón, <br>
+                entrepierna rayones de crayón, <br>
+                rodillas panza de gatitos, <br>
+                pies colibríes azúcar algodón. <br>
+                Mujer metáforas de amor. 
+            </p>
+        </article>
+
+        <article class="paper" id="seguro-de-vida">
+            <h2>Seguro de vida </h2>
+            <p>
+                Contigo, <br>
+                mi cuerpo hasta su lecho <br>
+                en tu abrigo está mi alma <br>
+                y en tu cuello el testamento, <br>
+                papel de mi beso <br>
+                que firmo marcando fuerte <br>
+                al contrato de este amor, <br>
+                hasta la muerte <br>
+                contigo.
+            </p>
+        </article>
+
+        <article class="paper" id="destiempo">
+            <h2>Destiempo</h2>
+            <p>
+                Te esperaré <br>
+                toda una vida <br>
+                pero dame una señal, <br>
+                dime que estás por llegar, <br>
+                que en la puerta de mis parpados dormidos <br>
+                estarás esperando para vernos <br>
+                en cada hora de tu rutinaria retina. 
+            </p>
+            <br>
+            <p>
+                Te esperaré <br>
+                porque no tengo <br>
+                problema alguno <br>
+                con el tiempo, <br>
+                pero el tiempo no espera, <br>
+                inevitable paso inquebrantable, <br>
+                se está yendo <br>
+                y no me importaría esperarte, <br>
+                si fuese por mí <br>
+                pediría la eternidad a tu lado <br>
+                (y me parece poco tiempo lo infinito.) <br>
+                Pero la realidad es otra, <br>
+                mi corazón palpita más lento. <br>
+                Apresúrate, donde sea que estés, <br>
+                encuéntrame y llévame contigo <br>
+                antes que el tiempo lo haga.
+            </p>
+        </article>
+
+        <article class="paper" id="donde">
+            <h2>Dóndes </h2>
+            <p>
+                Te recuerdo con desconsuelo, ya no quiero eso, <br>
+                me voy <br>
+                donde tu recuerdo no me alcance. <br>
+                Pero no puedo escabullirme dentro del alma, <br>
+                y no puedo volver a mi pecho por el miedo a verte, <br>
+                no puedo desprenderme de ti <br>
+                sin desprenderme de mí por completo. <br>
+                ¿Dónde es ese lugar?, ¿dónde está el olvido? <br>
+            </p>
+        </article>
+
+        <article class="paper" id="soneto-otonio">
+            <h2>Soneto a las flores en otoño </h2>
+            <p>
+                He observado a los árboles dolidos <br>
+                el otoño ha caído en sus miradas <br>
+                en sus cortezas las tardes talladas <br>
+                por dos torcidos juncos distraídos. 
+            </p>
+            <br>
+            <p>
+                Si en las nubes estuvieran crecidos <br>
+                estarían volando con las hadas, <br>
+                sus plumas verdes bien imaginadas, <br>
+                más crujen hojas de huesos molidos. 
+            </p>
+            <br>
+            <p>
+                Este otoño es más fresco que el invierno. <br>
+                Caen en mí poesías castañas <br>
+                del árbol las hojas de su cuaderno. <br>
+            </p>
+            <br>
+            <p>
+                Amor, el paisaje es solo testigo. <br>
+                El otoño se ha llevado las flores <br>
+                pero yo me he quedado contigo.
+            </p>
+        </article>
+    </section>
+    
+    <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <footer>
+        Todos los derechos reservados 2022
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
